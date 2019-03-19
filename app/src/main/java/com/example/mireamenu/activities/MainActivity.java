@@ -13,8 +13,6 @@ import static com.example.mireamenu.Variables.*;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private final static String LOG = "MainActivityLogger";
-
     Button btnMIREA, btnMITHT, btnMGUPI;
 
     @Override
@@ -37,15 +35,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String university = "";
         switch (v.getId()) {
             case R.id.btnMIREA:
-                Log.d(LOG, "MIREA was pressed");
+                Log.d(ACTIVITY_LOGGER, "MIREA was pressed");
                 university = MIREA;
                 break;
             case R.id.btnMITHT:
-                Log.d(LOG, "MITHT was pressed");
+                Log.d(ACTIVITY_LOGGER, "MITHT was pressed");
                 university = MITHT;
                 break;
             case R.id.btnMGUPI:
-                Log.d(LOG, "MGUPI was pressed");
+                Log.d(ACTIVITY_LOGGER, "MGUPI was pressed");
                 university = MGUPI;
                 break;
         }
