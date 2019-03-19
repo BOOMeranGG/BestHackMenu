@@ -1,0 +1,54 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Винегрет овощной",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 30
+    },
+    {
+      "id": 2,
+      "name": "Суп овощной с курицей и сметаной",
+      "weight": "35/250/10 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 55
+    },
+    {
+      "id": 3,
+      "name": "Шницель рубленный по-африкански",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 90
+    },
+    {
+      "id": 4,
+      "name": "Каша гречневая",
+      "weight": "150 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 20
+    },
+    {
+      "id": 5,
+      "name": "Чай с сахаром",
+      "weight": "330 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 13
+    }
+  ]
+}

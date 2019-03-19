@@ -1,0 +1,84 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Жульен на сливках",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 90
+    },
+    {
+      "id": 2,
+      "name": "Гуляш из говядины",
+      "weight": "75/50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 125
+    },
+    {
+      "id": 3,
+      "name": "Картофель, жаренный с грибами, луком",
+      "weight": "150 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 85
+    },
+    {
+      "id": 4,
+      "name": "Котлета рыбная \"Краснодарская\"",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 100
+    },
+    {
+      "id": 5,
+      "name": "Куры жареные",
+      "weight": "120 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 95
+    },
+    {
+      "id": 6,
+      "name": "Филе кур, запеченное с помидором, сыром, майонезом",
+      "weight": "100/50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 140
+    },
+    {
+      "id": 7,
+      "name": "Рыба отварная с лимоном",
+      "weight": "100/10 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 170
+    },
+    {
+      "id": 8,
+      "name": "Шницель рубленный по-африкански",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 90
+    }
+  ]
+}

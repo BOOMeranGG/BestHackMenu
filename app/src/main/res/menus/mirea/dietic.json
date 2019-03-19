@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Каша молочная пшенная с маслом",
+      "weight": "250 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 40
+    },
+    {
+      "id": 2,
+      "name": "Пудинг творожный с курагой, сгущенным молоком",
+      "weight": "150/20 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 60
+    },
+    {
+      "id": 3,
+      "name": "Пудинг творожный с курагой, сметаной",
+      "weight": "150/20 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 60
+    }
+  ]
+}

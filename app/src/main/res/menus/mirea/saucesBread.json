@@ -1,0 +1,74 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Горчица",
+      "weight": "10 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 5
+    },
+    {
+      "id": 2,
+      "name": "Кетчуп \"Хайнц\"",
+      "weight": "50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 20
+    },
+    {
+      "id": 3,
+      "name": "Подлива мясная (Гуляш)",
+      "weight": "50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 5
+    },
+    {
+      "id": 4,
+      "name": "Соус \"Тар-тар\"",
+      "weight": "50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 20
+    },
+    {
+      "id": 5,
+      "name": "Хлеб пшеничный",
+      "weight": "35 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 3
+    },
+    {
+      "id": 6,
+      "name": "Хлеб ржаной",
+      "weight": "35 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 2
+    },
+    {
+      "id": 7,
+      "name": "Хрен столовый",
+      "weight": "10 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 5
+    }
+  ]
+}

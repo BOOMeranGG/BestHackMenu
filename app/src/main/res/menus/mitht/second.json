@@ -1,0 +1,84 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Жульен на сливках",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 90
+    },
+    {
+      "id": 2,
+      "name": "Говядина отварная",
+      "weight": "75 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 120
+    },
+    {
+      "id": 3,
+      "name": "Оладьи из печени со сметаной",
+      "weight": "150/20 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 100
+    },
+    {
+      "id": 4,
+      "name": "Куры жареные",
+      "weight": "120 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 95
+    },
+    {
+      "id": 5,
+      "name": "Поджарка из филе кур в сливочном соусе",
+      "weight": "75/50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 105
+    },
+    {
+      "id": 6,
+      "name": "Рыба, запеченная с помидором, сыром, майонезом",
+      "weight": "80/40 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 160
+    },
+    {
+      "id": 7,
+      "name": "Свинина, запеченная \"по-барски\"",
+      "weight": "75/60 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 140
+    },
+    {
+      "id": 8,
+      "name": "Тефтели мясные, рубленные в красном соусе",
+      "weight": "115/50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 95
+    }
+  ]
+}
