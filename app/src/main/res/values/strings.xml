@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MireaMenu</string>
+    <string name="reviews">Очень вкусно!</string>
+
+    <string name="assortment">
+        Эконом обеды • Первые блюда • Вторые блюда •
+        Гарниры • Соусы/хлеб • Холодные закуски • Напитки
+    </string>
+    <string name="econom">Эконом обеды</string>
+    <string name="firstCourse">Первые блюда</string>
+    <string name="secondCourse">Вторые блюда</string>
+    <string name="garnish">Гарниры</string>
+    <string name="breadAndSauce">Соусы/хлеб</string>
+    <string name="coldSnake">Холодные закуски</string>
+    <string name="drink">Напитки</string>
 </resources>
