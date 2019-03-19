@@ -1,4 +1,4 @@
-package com.example.mireamenu;
+package com.example.mireamenu.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.mireamenu.R;
+
+import static com.example.mireamenu.Variables.*;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -34,18 +38,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btnMIREA:
                 Log.d(LOG, "MIREA was pressed");
-                university = "MIREA";
+                university = MIREA;
                 break;
             case R.id.btnMITHT:
                 Log.d(LOG, "MITHT was pressed");
-                university = "MITHT";
+                university = MITHT;
                 break;
             case R.id.btnMGUPI:
                 Log.d(LOG, "MGUPI was pressed");
-                university = "MGUPI";
+                university = MGUPI;
                 break;
         }
         intent.putExtra("university", university);
+        intent.putExtra("type", "Эконом обеды");
         startActivity(intent);
     }
 }
