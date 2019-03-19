@@ -1,0 +1,104 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Горячий шоколад",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 30
+    },
+    {
+      "id": 2,
+      "name": "Компот вишнёвый",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 30
+    },
+    {
+      "id": 3,
+      "name": "Компот из чернослива",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 30
+    },
+    {
+      "id": 4,
+      "name": "Кофе 3 в 1",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 25
+    },
+    {
+      "id": 5,
+      "name": "Кофе б/р без сахара",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 25
+    },
+    {
+      "id": 6,
+      "name": "Кофе б/р с сахаром",
+      "weight": "200 мл/16 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 25
+    },
+    {
+      "id": 7,
+      "name": "Сок в ассортименте",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 35
+    },
+    {
+      "id": 8,
+      "name": "Чай без сахара",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 15
+    },
+    {
+      "id": 9,
+      "name": "Чай с сахаром",
+      "weight": "200 мл/16 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 15
+    },
+    {
+      "id": 10,
+      "name": "Чай с сахаром и лимоном",
+      "weight": "200 мл/16/7 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 15
+    }
+  ]
+}

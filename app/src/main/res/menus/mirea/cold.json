@@ -1,0 +1,74 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Винегрет овощной",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 30
+    },
+    {
+      "id": 2,
+      "name": "Киви с взбитыми сливками",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 60
+    },
+    {
+      "id": 3,
+      "name": "Салат \"Городнецкий\" (курица, салат, огурец, кукуруза)",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 55
+    },
+    {
+      "id": 4,
+      "name": "Салат \"Домашний\" (с ветчиной)",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 45
+    },
+    {
+      "id": 5,
+      "name": "Салат \"Осенний\"",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 60
+    },
+    {
+      "id": 6,
+      "name": "Салат из морской капусты с овощами, растительным маслом",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 45
+    },
+    {
+      "id": 7,
+      "name": "Салат из свежей капусты  со свежим огурцом, укропом, р/м",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 30
+    }
+  ]
+}

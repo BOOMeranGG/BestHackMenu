@@ -1,0 +1,54 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Капуста б/к с овощами, растительным маслом",
+      "weight": "120 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 35
+    },
+    {
+      "id": 2,
+      "name": "Суп гороховый с картофелем и копченостями",
+      "weight": "25/250 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 50
+    },
+    {
+      "id": 3,
+      "name": "Тефтели мясные, рубленные в красном соусе",
+      "weight": "115/50 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 95
+    },
+    {
+      "id": 4,
+      "name": "Макароны отварные с маслом",
+      "weight": "150 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 15
+    },
+    {
+      "id": 5,
+      "name": "Чай с сахаром",
+      "weight": "200 мл/16 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 15
+    }
+  ]
+}

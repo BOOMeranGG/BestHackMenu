@@ -1,54 +1,54 @@
 {
-  "list" : [
+  "list": [
     {
-      "id" : 1,
-      "name" : "Морковь с сахаром, яблоком, курагой, р/м",
-      "weight" : "100 г",
-      "calorie" : 100,
-      "proteins" : 2,
-      "fats" : 18,
-      "carbohydrates" : 80,
-      "cost" : 25
+      "id": 1,
+      "name": "Морковь с сахаром, яблоком, курагой, р/м",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 25
     },
     {
-      "id" : 2,
-      "name" : "Рассольник \"Ленинградский\" с курицей, сметаной",
-      "weight" : "35/250/10",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 50
+      "id": 2,
+      "name": "Рассольник \"Ленинградский\" с курицей, сметаной",
+      "weight": "35/250/10",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 50
     },
     {
-      "id" : 3,
-      "name" : "Котлета куриная, рубленная",
-      "weight" : "100 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 75
+      "id": 3,
+      "name": "Котлета куриная, рубленная",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 75
     },
     {
-      "id" : 4,
-      "name" : "Рис, припущенный в бульоне",
-      "weight" : "150 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 20
+      "id": 4,
+      "name": "Рис, припущенный в бульоне",
+      "weight": "150 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 20
     },
     {
-      "id" : 5,
-      "name" : "Чай с сахаром",
-      "weight" : "200 мл/16 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 15
+      "id": 5,
+      "name": "Чай с сахаром",
+      "weight": "200 мл/16 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 15
     }
   ]
 }

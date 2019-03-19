@@ -1,34 +1,34 @@
 {
-  "list" : [
+  "list": [
     {
-      "id" : 1,
-      "name" : "Горячий шоколад",
-      "weight" : "200 мл",
-      "calorie" : 100,
-      "proteins" : 2,
-      "fats" : 18,
-      "carbohydrates" : 80,
-      "cost" : 30
+      "id": 1,
+      "name": "Горячий шоколад",
+      "weight": "200 мл",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 30
     },
     {
-      "id" : 2,
-      "name" : "Компот из кураги",
-      "weight" : "200 мл",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 30
+      "id": 2,
+      "name": "Компот из кураги",
+      "weight": "200 мл",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 30
     },
     {
-      "id" : 3,
-      "name" : "Напиток фруктовый",
-      "weight" : "200 мл",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 20
+      "id": 3,
+      "name": "Напиток фруктовый",
+      "weight": "200 мл",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 20
     },
     {
       "id": 4,
@@ -41,74 +41,74 @@
       "cost": 25
     },
     {
-      "id" : 5,
-      "name" : "Кофе б/р без сахара",
-      "weight" : "200 мл",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 25
+      "id": 5,
+      "name": "Кофе б/р без сахара",
+      "weight": "200 мл",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 25
     },
     {
-      "id" : 6,
-      "name" : "Кофе б/р с сахаром",
-      "weight" : "200 мл/16 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 25
+      "id": 6,
+      "name": "Кофе б/р с сахаром",
+      "weight": "200 мл/16 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 25
     },
     {
-      "id" : 7,
-      "name" : "Лимон",
-      "weight" : "7 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 5
+      "id": 7,
+      "name": "Лимон",
+      "weight": "7 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 5
     },
     {
-      "id" : 8,
-      "name" : "Сок в ассортименте",
-      "weight" : "200 мл",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 35
+      "id": 8,
+      "name": "Сок в ассортименте",
+      "weight": "200 мл",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 35
     },
     {
-      "id" : 9,
-      "name" : "Чай без сахара",
-      "weight" : "200 мл/16 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 15
+      "id": 9,
+      "name": "Чай без сахара",
+      "weight": "200 мл/16 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 15
     },
     {
-      "id" : 10,
-      "name" : "Чай с сахаром",
-      "weight" : "200 мл/16 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 15
+      "id": 10,
+      "name": "Чай с сахаром",
+      "weight": "200 мл/16 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 15
     },
     {
-      "id" : 11,
-      "name" : "Чай с сахаром и лимоном",
-      "weight" : "200 мл/16/7 г",
-      "calorie" : 20,
-      "proteins" : 20,
-      "fats" : 20,
-      "carbohydrates" : 60,
-      "cost" : 15
+      "id": 11,
+      "name": "Чай с сахаром и лимоном",
+      "weight": "200 мл/16/7 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 15
     }
   ]
 }

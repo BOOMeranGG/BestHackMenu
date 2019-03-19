@@ -1,0 +1,74 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Капуста б/к с овощами, растительным маслом",
+      "weight": "120 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 35
+    },
+    {
+      "id": 2,
+      "name": "Овощи свежие с растительным маслом",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 40
+    },
+    {
+      "id": 3,
+      "name": "Салат \"Анжелика\" (ветчина, салат \"Китайский\", лук, яйцо, майонез)",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 55
+    },
+    {
+      "id": 4,
+      "name": "Салат \"Столичный\" (с курицей)",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 50
+    },
+    {
+      "id": 5,
+      "name": "Салат из редиса со свежим огурцом, яйцом, майонезом",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 40
+    },
+    {
+      "id": 6,
+      "name": "Салат фруктовый с взбитыми сливками",
+      "weight": "100/20 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 50
+    },
+    {
+      "id": 7,
+      "name": "Свекла с черносливом, грецким орехом, чесноком, майонезом",
+      "weight": "100",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 45
+    }
+  ]
+}
