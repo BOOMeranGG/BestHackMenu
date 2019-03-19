@@ -1,4 +1,4 @@
-package com.example.mireamenu.activities;
+package com.example.mireamenu.view.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.mireamenu.R;
+import com.example.mireamenu.controller.JsonEatParser;
+import com.example.mireamenu.model.listsOfJsonBody.FirstDishList;
 
 import static com.example.mireamenu.Variables.*;
 
@@ -27,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMIREA.setOnClickListener(this);
         btnMITHT.setOnClickListener(this);
         btnMGUPI.setOnClickListener(this);
+
+//        JsonEatParser parser = new JsonEatParser();
+//        parser.doParse(getBaseContext(), "mgupi", "firstDish", FirstDishList.class);
     }
 
     @Override

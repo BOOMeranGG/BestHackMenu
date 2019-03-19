@@ -1,4 +1,4 @@
-package com.example.mireamenu.activities;
+package com.example.mireamenu.view.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

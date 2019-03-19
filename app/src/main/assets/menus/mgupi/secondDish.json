@@ -1,0 +1,84 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Жульен на сливках",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 90
+    },
+    {
+      "id": 2,
+      "name": "Биточек рыбный",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 100
+    },
+    {
+      "id": 3,
+      "name": "Котлета куриная, рубленная",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 75
+    },
+    {
+      "id": 4,
+      "name": "Куры жареные",
+      "weight": "120 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 95
+    },
+    {
+      "id": 5,
+      "name": "Плов из индейки",
+      "weight": "250 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 110
+    },
+    {
+      "id": 6,
+      "name": "Рыба отварная с лимоном",
+      "weight": "100/10 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 170
+    },
+    {
+      "id": 7,
+      "name": "Поджарка из свинины",
+      "weight": "75/50 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 100
+    },
+    {
+      "id": 8,
+      "name": "Свинина, запеченная с грибами, луком, сыром, майонезом",
+      "weight": "80/40 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 145
+    }
+  ]
+}
