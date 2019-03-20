@@ -11,15 +11,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.mireamenu.R;
+import com.example.mireamenu.controller.actionListeners.FoodActionListener;
 import com.example.mireamenu.controller.jsonParser.FoodGroup;
 import com.example.mireamenu.controller.actionListeners.MenuActivityListener;
 import com.example.mireamenu.model.FoodList;
@@ -59,8 +58,11 @@ public class MenuActivity extends AppCompatActivity{
         createList(context, foodList);
     }
 
+    /**
+     *  ScrollView лишний, нужно убрать
+     */
     private void createList(Context context, FoodList foodList) {
-        LinearLayout lMain = findViewById(R.id.mainLayout);
+        LinearLayout lMain = findViewById(R.id.linearInto);
         List<JsonFoodBody> foods = foodList.list;
 
         ScrollView scrollView = new ScrollView(this);
@@ -78,19 +80,13 @@ public class MenuActivity extends AppCompatActivity{
         for (int i = 0; i < foods.size(); i++) {
             JsonFoodBody product = foods.get(i);
             TextView name = new TextView(this);
-//            name.setText(i + UNIVERSITY + " HELLO WORLD!");
-//            name.setTextSize(22);
-//            linearLayout.addView(name);
-            name.setText(product.name + " " + product.weight);
+            name.setText((i + 1) + ".) " + product.name + " " + product.weight);
             name.setTextSize(24);
             name.setTypeface(Typeface.DEFAULT_BOLD);
-
-            TextView description = new TextView(this);
-            description.setTextSize(14);
-            description.setTypeface(Typeface.SERIF);
-
             linearLayout.addView(name);
-            linearLayout.addView(description);
+
+            FoodActionListener listener = new FoodActionListener();
+            name.setOnClickListener(listener);
         }
         scrollView.addView(linearLayout);
         lMain.addView(scrollView);

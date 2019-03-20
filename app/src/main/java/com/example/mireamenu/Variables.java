@@ -3,6 +3,7 @@ package com.example.mireamenu;
 public class Variables {
     public static final String ACTIVITY_LOGGER = "ACTIVITY_LOGGER";
     public static final String PARSER_LOGGER = "PARSER_LOGGER";
+    public static final String BASKET = "BASKET";
 
     public static final String MIREA = "mirea";
     public static final String MITHT = "mitht";
