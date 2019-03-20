@@ -26,7 +26,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        Log.d(ACTIVITY_LOGGER, UNIVERSITY + "MainMenu activity was created");
+        Log.d(ACTIVITY_LOGGER, "MainMenu activity was created");
         tvUniversityName = findViewById(R.id.tvUniversityName);
         tvTypeName = findViewById(R.id.tvTypeName);
 

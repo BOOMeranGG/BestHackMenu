@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.Log;
 
-import com.example.mireamenu.model.listsOfJsonBody.EatList;
+import com.example.mireamenu.model.FoodList;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -15,12 +15,12 @@ import static com.example.mireamenu.Variables.PARSER_LOGGER;
 
 public class JsonEatParser {
 
-    public EatList doParse(Context context, String universityName, String eatName, Class clazz) {
+    public FoodList doParse(Context context, String universityName, String foodName) {
         Gson gson = new Gson();
-        String filePath = "menus/" + universityName + "/" + eatName + ".json";
+        String filePath = "menus/" + universityName + "/" + foodName + ".json";
         Log.d(PARSER_LOGGER, "doParse()" + filePath);
         String jsonString = convertJsonToString(filePath, context);
-        EatList result = (EatList) gson.fromJson(jsonString, clazz);
+        FoodList result = gson.fromJson(jsonString, FoodList.class);
         return result;
     }
 
@@ -38,9 +38,9 @@ public class JsonEatParser {
             }
             in.close();
         } catch (FileNotFoundException e) {
-            Log.e(PARSER_LOGGER, "FileNotFoundExpeption");
+            Log.e(PARSER_LOGGER, "FileNotFoundException");
         } catch (IOException e) {
-            Log.e(PARSER_LOGGER, "IOExeption");
+            Log.e(PARSER_LOGGER, "IOException");
         }
         Log.d(PARSER_LOGGER, "convert ended");
         return result.toString();

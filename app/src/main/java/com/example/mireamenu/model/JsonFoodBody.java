@@ -1,6 +1,6 @@
 package com.example.mireamenu.model;
 
-public class JsonEatBody {
+public class JsonFoodBody {
     public int id;
     public String name;
     public String  weight;

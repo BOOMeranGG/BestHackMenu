@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class JsonEatListParserTest {
+public class JsonFoodListParserTest {
     private JsonEatParser parser;
 
     @Before
