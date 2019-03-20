@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainLayout"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -81,9 +81,9 @@
                 android:id="@+id/btnEconom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="@string/econom" />
 
@@ -91,9 +91,9 @@
                 android:id="@+id/btnFirstDish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="@string/firstCourse" />
 
@@ -101,9 +101,9 @@
                 android:id="@+id/btnSecondDish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="@string/secondCourse" />
 
@@ -111,9 +111,9 @@
                 android:id="@+id/btnGarnish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="@string/garnish" />
 
@@ -121,9 +121,9 @@
                 android:id="@+id/btnBreadAndSauce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="@string/breadAndSauce" />
 
@@ -131,9 +131,9 @@
                 android:id="@+id/btnCold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:text="@string/coldSnake" />
 
@@ -152,10 +152,10 @@
         android:id="@+id/tvTypeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="24sp" />
 
     <View
         android:layout_width="match_parent"
@@ -164,12 +164,5 @@
         android:layout_marginTop="8dp"
         android:background="@color/colorLine"
         tools:ignore="SmallSp" />
-
-    <ScrollView
-        android:id="@+id/scrFoods"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </ScrollView>
 
 </LinearLayout>

@@ -1,7 +1,9 @@
 package com.example.mireamenu.view.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,9 +12,11 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.mireamenu.R;
@@ -45,35 +49,51 @@ public class MenuActivity extends AppCompatActivity{
         initTextOnActivity();
         initButtonListener();
 
+        Context context = getBaseContext();
         FoodGroup foodGroup = new FoodGroup();
         FoodList foodList = foodGroup.getFoodList(
-                getBaseContext(),
+                context,
                 UNIVERSITY,
                 TYPE_OF_FOOD
         );
-        //createList(getBaseContext(), foodList);
+        createList(context, foodList);
     }
 
     private void createList(Context context, FoodList foodList) {
-        LinearLayout mainLayout = findViewById(R.id.mainLayout);
-        //List<JsonFoodBody> list = foodList.list;
+        LinearLayout lMain = findViewById(R.id.mainLayout);
+        List<JsonFoodBody> foods = foodList.list;
 
-//        for (int i = 0; i < list.size(); i++) {
-//        }
-//        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//
-//        ImageView img = (ImageView) layoutInflater.inflate(R.layout.activity_menu, mainLayout, false);
-//        img.setImageResource(R.drawable.ic_launcher_background);
+        ScrollView scrollView = new ScrollView(this);
+        scrollView.setLayoutParams(new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT)
+        );
+        LinearLayout linearLayout = new LinearLayout(this);
+        linearLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT)
+        );
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
 
-//        ImageView imageView = new ImageView(MenuActivity.this);
-//        imageView.setImageResource(R.drawable.ic_launcher_background);
-//        LinearLayout.LayoutParams imageViewLayoutParams = new LinearLayout.LayoutParams(
-//                LinearLayout.LayoutParams.WRAP_CONTENT,
-//                LinearLayout.LayoutParams.WRAP_CONTENT
-//        );
-//        imageView.setLayoutParams(imageViewLayoutParams);
-//
-//        mainLayout.addView(imageView);
+        for (int i = 0; i < foods.size(); i++) {
+            JsonFoodBody product = foods.get(i);
+            TextView name = new TextView(this);
+//            name.setText(i + UNIVERSITY + " HELLO WORLD!");
+//            name.setTextSize(22);
+//            linearLayout.addView(name);
+            name.setText(product.name + " " + product.weight);
+            name.setTextSize(24);
+            name.setTypeface(Typeface.DEFAULT_BOLD);
+
+            TextView description = new TextView(this);
+            description.setTextSize(14);
+            description.setTypeface(Typeface.SERIF);
+
+            linearLayout.addView(name);
+            linearLayout.addView(description);
+        }
+        scrollView.addView(linearLayout);
+        lMain.addView(scrollView);
     }
 
     private void initTextOnActivity() {
