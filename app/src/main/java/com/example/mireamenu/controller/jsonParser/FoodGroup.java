@@ -34,7 +34,6 @@ public class FoodGroup {
                 food = SECOND_DISH_PATH;
                 break;
         }
-        System.out.println(1);
         return parser.doParse(context, university, food);
     }
 }

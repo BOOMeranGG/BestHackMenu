@@ -20,6 +20,7 @@ public class JsonEatParser {
         String filePath = "menus/" + universityName + "/" + foodName + ".json";
         Log.d(PARSER_LOGGER, "doParse()" + filePath);
         String jsonString = convertJsonToString(filePath, context);
+        Log.d(PARSER_LOGGER, "parse ended");
         return gson.fromJson(jsonString, FoodList.class);
     }
 
@@ -41,7 +42,6 @@ public class JsonEatParser {
         } catch (IOException e) {
             Log.e(PARSER_LOGGER, "IOException");
         }
-        Log.d(PARSER_LOGGER, "convert ended");
         return result.toString();
     }
 }
