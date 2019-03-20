@@ -1,5 +1,6 @@
 package com.example.mireamenu.model;
 
+
 public class JsonFoodBody {
     public int id;
     public String name;
@@ -9,4 +10,6 @@ public class JsonFoodBody {
     public float fats;
     public float carbohydrates;
     public float cost;
+
+    public transient int count = 0;
 }

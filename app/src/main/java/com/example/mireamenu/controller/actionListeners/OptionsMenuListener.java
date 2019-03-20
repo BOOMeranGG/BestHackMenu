@@ -26,13 +26,16 @@ public class OptionsMenuListener {
     }
 
     private String getBasketInfo() {
-        //int weight = 0;
         float calories = 0;
         StringBuilder info = new StringBuilder();
         List<JsonFoodBody> shoppingList = Basket.shoppingList;
         for (int i = 0; i < shoppingList.size(); i++) {
             JsonFoodBody item = shoppingList.get(i);
+            int count = item.count;
+
             info.append(item.name);
+            info.append("\t\tX")
+                .append(count);
             info.append("\n\t\t\tСтоимость: ").append(item.cost).append("\u20BD");
             info.append("\n\t\t\tВес: \t").append(item.weight);
             info.append("\n\t\t\tКаллории: \t").append(item.calorie);
@@ -43,14 +46,13 @@ public class OptionsMenuListener {
                     .append(item.carbohydrates)
                     .append("\n");
 
-            calories += item.calorie;
+            calories += item.calorie * count;
         }
         info.append("\nСуммарная стоимость = ")
                 .append(Basket.cost)
                 .append("\u20BD")
                 .append(", всего каллорий = ")
                 .append(calories).append(", вес: ");
-        //        .append(weight);
         return info.toString();
     }
 }

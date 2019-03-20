@@ -33,20 +33,33 @@ public class FoodActionListener implements View.OnClickListener {
     public void onClick(View v) {
         TextView tv = (TextView) v;
         Log.d(BASKET, tv.getText() + " выбрано");
-
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+
         builder.setTitle("КОРЗИНА");
-        builder.setMessage("Добавить \"" + product.name + "\" в корзину?");
-        builder.setPositiveButton("OK", (dialog, arg1) -> {
-            addToBasket();
-        });
-        builder.setNegativeButton("Отмена", (dialog, arg1) -> {
-        });
+        builder.setMessage(getInfoAboutProduct());
+        builder.setPositiveButton("OK", (dialog, arg1) -> addToBasket());
+        builder.setNegativeButton("Отмена", (dialog, arg1) -> { });
         builder.show();
     }
 
+    private String getInfoAboutProduct() {
+        StringBuilder info = new StringBuilder();
+        info.append("Добавить \"")
+                .append(product.name)
+                .append("\" в корзину?")
+                .append("\nКалорийность: ")
+                .append(product.calorie)
+                .append("\nБ/Ж/У: ")
+                .append(product.proteins)
+                .append("/")
+                .append(product.fats)
+                .append("/")
+                .append(product.carbohydrates);
+        return info.toString();
+    }
+
     private void addToBasket() {
-        Basket.shoppingList.add(product);
+        Basket.addProduct(product);
         Basket.cost += product.cost;
         Log.d(BASKET, "Добавлено. Общая стоимость: " + Basket.cost);
         Toast.makeText(activity, "Общая стоимость: " + Basket.cost, Toast.LENGTH_SHORT).show();
