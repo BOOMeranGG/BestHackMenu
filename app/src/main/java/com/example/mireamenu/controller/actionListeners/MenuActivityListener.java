@@ -29,6 +29,10 @@ public class MenuActivityListener implements View.OnClickListener {
         activity.startActivity(intent);
     }
 
+    /**
+     * В зависимости от того, какая кнопка была нажата,
+     * возвращается нужный текст
+     */
     private String getTextFoodGroupName(View v) {
         String foodGroupName = "";
         switch (v.getId()) {

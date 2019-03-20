@@ -8,8 +8,12 @@ import static com.example.mireamenu.Variables.*;
 
 public class FoodGroup {
 
+    /**
+     * 'Адаптер' для класса JsonFoodParser. Именно он вызывается из других пакетов
+     * @return
+     */
     public FoodList getFoodList(Context context, String university, String foodName) {
-        JsonEatParser parser = new JsonEatParser();
+        JsonFoodParser parser = new JsonFoodParser();
         String food = "";
         switch (foodName) {
             case COLD_SNAKE:

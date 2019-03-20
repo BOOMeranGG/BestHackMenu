@@ -1,6 +1,6 @@
 package com.example.mireamenu.controller;
 
-import com.example.mireamenu.controller.jsonParser.JsonEatParser;
+import com.example.mireamenu.controller.jsonParser.JsonFoodParser;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,11 +8,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class JsonFoodListParserTest {
-    private JsonEatParser parser;
+    private JsonFoodParser parser;
 
     @Before
     public void setUp() {
-        parser = new JsonEatParser();
+        parser = new JsonFoodParser();
     }
 
     @Test

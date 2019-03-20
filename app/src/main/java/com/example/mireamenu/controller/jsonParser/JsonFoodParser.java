@@ -13,8 +13,15 @@ import java.io.InputStreamReader;
 
 import static com.example.mireamenu.Variables.PARSER_LOGGER;
 
-public class JsonEatParser {
+public class JsonFoodParser {
 
+    /**
+     * Функция, на вход которой подаются необходимые данные для составления пути.
+     *
+     * @param universityName    - имя университета(для пути)
+     * @param foodName          - тип блюда(для пути)
+     * @return                  - объект типа FoodList(распаршенный json)
+     */
     FoodList doParse(Context context, String universityName, String foodName) {
         Gson gson = new Gson();
         String filePath = "menus/" + universityName + "/" + foodName + ".json";
@@ -24,6 +31,10 @@ public class JsonEatParser {
         return gson.fromJson(jsonString, FoodList.class);
     }
 
+    /**
+     * Функция переводит json файл в определённом пути в строку
+     * @param filePath  - путь до файла в assets
+     */
     private String convertJsonToString(String filePath, Context context) {
         String word;
         StringBuilder result = new StringBuilder();

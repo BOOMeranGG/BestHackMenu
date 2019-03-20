@@ -1,20 +1,13 @@
 package com.example.mireamenu.controller.actionListeners;
 
-import android.os.Bundle;
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
-import android.content.DialogInterface.OnClickListener;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mireamenu.model.Basket;
-import com.example.mireamenu.model.JsonFoodBody;
+import com.example.mireamenu.model.ProductEntity;
 import com.example.mireamenu.view.activities.MenuActivity;
 
 import static com.example.mireamenu.Variables.BASKET;
@@ -22,9 +15,9 @@ import static com.example.mireamenu.Variables.BASKET;
 public class FoodActionListener implements View.OnClickListener {
 
     private MenuActivity activity;
-    private JsonFoodBody product;
+    private ProductEntity product;
 
-    public FoodActionListener(MenuActivity activity, JsonFoodBody product) {
+    public FoodActionListener(MenuActivity activity, ProductEntity product) {
         this.activity = activity;
         this.product = product;
     }

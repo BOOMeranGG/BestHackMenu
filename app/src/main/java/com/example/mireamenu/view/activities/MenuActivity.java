@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.mireamenu.R;
 import com.example.mireamenu.controller.actionListeners.FoodActionListener;
@@ -22,7 +21,7 @@ import com.example.mireamenu.controller.actionListeners.OptionsMenuListener;
 import com.example.mireamenu.controller.jsonParser.FoodGroup;
 import com.example.mireamenu.controller.actionListeners.MenuActivityListener;
 import com.example.mireamenu.model.FoodList;
-import com.example.mireamenu.model.JsonFoodBody;
+import com.example.mireamenu.model.ProductEntity;
 
 import java.util.List;
 
@@ -55,15 +54,19 @@ public class MenuActivity extends AppCompatActivity{
                 UNIVERSITY,
                 TYPE_OF_FOOD
         );
-        createScrollWithProducts(context, foodList);
+        createScrollWithProducts(foodList);
     }
 
     /**
-     *  ScrollView лишний, нужно убрать, как и Context
+     * Создание нижнего списка со всеми видами товаров.
+     * Проходим по всему спику и добавляем каждый элемент по шаблону
+     * в scrollView(можно(нужно) без него - не успел), а уже его во внутренний LinearLayout
+     *
+     * @param foodList - Список всех блюд в текущем разделе
      */
-    private void createScrollWithProducts(Context context, FoodList foodList) {
+    private void createScrollWithProducts(FoodList foodList) {
         LinearLayout lMain = findViewById(R.id.linearInto);
-        List<JsonFoodBody> foods = foodList.list;
+        List<ProductEntity> foods = foodList.list;
 
         ScrollView scrollView = new ScrollView(this);
         scrollView.setLayoutParams(new LinearLayout.LayoutParams(
@@ -78,7 +81,7 @@ public class MenuActivity extends AppCompatActivity{
         linearLayout.setOrientation(LinearLayout.VERTICAL);
 
         for (int i = 0; i < foods.size(); i++) {
-            JsonFoodBody product = foods.get(i);
+            ProductEntity product = foods.get(i);
             TextView name = new TextView(this);
             name.setText((i + 1) + ".) " + product.name + " " + product.weight);
             name.setTextSize(20);
@@ -99,6 +102,9 @@ public class MenuActivity extends AppCompatActivity{
         lMain.addView(scrollView);
     }
 
+    /**
+     * Инициализирует текст во всём остальном активити
+     */
     private void initTextOnActivity() {
         Intent intent = getIntent();
         UNIVERSITY = intent.getStringExtra("university");
@@ -117,6 +123,7 @@ public class MenuActivity extends AppCompatActivity{
         TYPE_OF_FOOD = intent.getStringExtra("type");
         tvTypeName.setText(TYPE_OF_FOOD);
     }
+
 
     private void initButtonListener() {
         btnEconom = findViewById(R.id.btnEconom);

@@ -3,12 +3,10 @@ package com.example.mireamenu.controller.actionListeners;
 import android.app.AlertDialog;
 
 import com.example.mireamenu.model.Basket;
-import com.example.mireamenu.model.JsonFoodBody;
+import com.example.mireamenu.model.ProductEntity;
 import com.example.mireamenu.view.activities.MenuActivity;
 
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class OptionsMenuListener {
     private MenuActivity activity;
@@ -17,6 +15,9 @@ public class OptionsMenuListener {
         this.activity = activity;
     }
 
+    /**
+     * Создаёт диалоговое окно при нажатии на TextView с продуктом
+     */
     public void createDialogWithBasketInfo() {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle("Корзина");
@@ -25,12 +26,15 @@ public class OptionsMenuListener {
         alert.show();
     }
 
+    /**
+     * @return - строка с необходимой информацией по шаблону.
+     */
     private String getBasketInfo() {
         float calories = 0;
         StringBuilder info = new StringBuilder();
-        List<JsonFoodBody> shoppingList = Basket.shoppingList;
+        List<ProductEntity> shoppingList = Basket.shoppingList;
         for (int i = 0; i < shoppingList.size(); i++) {
-            JsonFoodBody item = shoppingList.get(i);
+            ProductEntity item = shoppingList.get(i);
             int count = item.count;
 
             info.append(item.name);

@@ -1,7 +1,9 @@
 package com.example.mireamenu.model;
 
-
-public class JsonFoodBody {
+/**
+ * У каждого продукта есть эти поля. Этот класс считывается с json
+ */
+public class ProductEntity {
     public int id;
     public String name;
     public String  weight;
