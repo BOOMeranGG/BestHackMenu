@@ -1,0 +1,74 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Грейпфрут с взбитыми сливками",
+      "weight": "100 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 50
+    },
+    {
+      "id": 2,
+      "name": "Морковь с сахаром, яблоком, курагой, р/м",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 25
+    },
+    {
+      "id": 3,
+      "name": "Редис \"Дайкон\" с морковью, сыром и майонезом",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 50
+    },
+    {
+      "id": 4,
+      "name": "Салат \"Золотая рыбка\" (крабовое мясо, кукуруза, капуста)",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 30
+    },
+    {
+      "id": 5,
+      "name": "Салат \"Рыбный\" (с рисом)",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 60
+    },
+    {
+      "id": 6,
+      "name": "Салат из квашеной капусты с клюквой, р/м",
+      "weight": "100 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 35
+    },
+    {
+      "id": 7,
+      "name": "Сельдь с гарниром",
+      "weight": "70/50 г",
+      "calorie": 20,
+      "proteins": 20,
+      "fats": 20,
+      "carbohydrates": 60,
+      "cost": 80
+    }
+  ]
+}

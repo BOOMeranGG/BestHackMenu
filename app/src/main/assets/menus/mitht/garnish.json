@@ -1,0 +1,44 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Баклажаны, тушенные с овощами",
+      "weight": "150 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 70
+    },
+    {
+      "id": 2,
+      "name": "Картофельное пюре",
+      "weight": "150 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 35
+    },
+    {
+      "id": 3,
+      "name": "Каша гречневая",
+      "weight": "150 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 20
+    },
+    {
+      "id": 4,
+      "name": "Рис, припущенный в бульоне",
+      "weight": "150 г",
+      "calorie": 100,
+      "proteins": 2,
+      "fats": 18,
+      "carbohydrates": 80,
+      "cost": 20
+    }
+  ]
+}
