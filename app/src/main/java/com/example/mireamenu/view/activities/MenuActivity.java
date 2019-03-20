@@ -1,15 +1,12 @@
 package com.example.mireamenu.view.activities;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -17,9 +14,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mireamenu.R;
 import com.example.mireamenu.controller.actionListeners.FoodActionListener;
+import com.example.mireamenu.controller.actionListeners.OptionsMenuListener;
 import com.example.mireamenu.controller.jsonParser.FoodGroup;
 import com.example.mireamenu.controller.actionListeners.MenuActivityListener;
 import com.example.mireamenu.model.FoodList;
@@ -56,13 +55,13 @@ public class MenuActivity extends AppCompatActivity{
                 UNIVERSITY,
                 TYPE_OF_FOOD
         );
-        createList(context, foodList);
+        createScrollWithProducts(context, foodList);
     }
 
     /**
      *  ScrollView лишний, нужно убрать, как и Context
      */
-    private void createList(Context context, FoodList foodList) {
+    private void createScrollWithProducts(Context context, FoodList foodList) {
         LinearLayout lMain = findViewById(R.id.linearInto);
         List<JsonFoodBody> foods = foodList.list;
 
@@ -148,7 +147,7 @@ public class MenuActivity extends AppCompatActivity{
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem menuItem = menu.findItem(R.id.action_location);
         menuItem.setVisible(true);
-        MenuItem menuItem2 = menu.findItem(R.id.action_info);
+        MenuItem menuItem2 = menu.findItem(R.id.basket_icon);
         menuItem2.setVisible(true);
 
         return super.onPrepareOptionsMenu(menu);
@@ -156,6 +155,8 @@ public class MenuActivity extends AppCompatActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        OptionsMenuListener listener = new OptionsMenuListener(this);
+        listener.createDialogWithBasketInfo();
         return super.onOptionsItemSelected(item);
     }
 }

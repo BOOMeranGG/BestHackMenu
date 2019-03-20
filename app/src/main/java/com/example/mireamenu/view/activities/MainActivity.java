@@ -6,6 +6,9 @@ import android.widget.Button;
 
 import com.example.mireamenu.R;
 import com.example.mireamenu.controller.actionListeners.MainActivityListener;
+import com.example.mireamenu.model.Basket;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,8 +28,12 @@ public class MainActivity extends AppCompatActivity {
         btnMIREA.setOnClickListener(listener);
         btnMITHT.setOnClickListener(listener);
         btnMGUPI.setOnClickListener(listener);
+    }
 
-//        JsonEatParser parser = new JsonEatParser();
-//        parser.doParse(getBaseContext(), "mgupi", "secondDish");
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Basket.shoppingList = new ArrayList<>();
+        Basket.cost = 0;
     }
 }

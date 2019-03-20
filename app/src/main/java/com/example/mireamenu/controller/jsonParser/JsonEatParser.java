@@ -20,8 +20,7 @@ public class JsonEatParser {
         String filePath = "menus/" + universityName + "/" + foodName + ".json";
         Log.d(PARSER_LOGGER, "doParse()" + filePath);
         String jsonString = convertJsonToString(filePath, context);
-        FoodList result = gson.fromJson(jsonString, FoodList.class);
-        return result;
+        return gson.fromJson(jsonString, FoodList.class);
     }
 
     private String convertJsonToString(String filePath, Context context) {
