@@ -21,8 +21,16 @@ public class MenuActivityListener implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(activity, MenuActivity.class);
-        String foodGroupName = "";
+        String foodGroupName = getTextFoodGroupName(v);
 
+        intent.putExtra("university", university);
+        intent.putExtra("type", foodGroupName);
+        activity.finish();
+        activity.startActivity(intent);
+    }
+
+    private String getTextFoodGroupName(View v) {
+        String foodGroupName = "";
         switch (v.getId()) {
             case R.id.btnEconom:
                 foodGroupName = ECONOM;
@@ -46,10 +54,6 @@ public class MenuActivityListener implements View.OnClickListener {
                 foodGroupName = DRINK;
                 break;
         }
-
-        intent.putExtra("university", university);
-        intent.putExtra("type", foodGroupName);
-        activity.finish();
-        activity.startActivity(intent);
+        return foodGroupName;
     }
 }

@@ -1,5 +1,7 @@
 package com.example.mireamenu.controller;
 
+import com.example.mireamenu.controller.jsonParser.JsonEatParser;
+
 import org.junit.Before;
 import org.junit.Test;
 

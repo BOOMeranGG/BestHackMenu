@@ -1,22 +1,34 @@
 package com.example.mireamenu.view.activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.mireamenu.R;
+import com.example.mireamenu.controller.jsonParser.FoodGroup;
 import com.example.mireamenu.controller.actionListeners.MenuActivityListener;
+import com.example.mireamenu.model.FoodList;
+import com.example.mireamenu.model.JsonFoodBody;
+
+import java.util.List;
 
 import static com.example.mireamenu.Variables.*;
 
 public class MenuActivity extends AppCompatActivity{
 
     private String UNIVERSITY;
+    private String TYPE_OF_FOOD;
     TextView tvUniversityName;
     Button btnEconom, btnFirstDish, btnSecondDish, btnGarnish, btnBreadAndSauce, btnCold, btnDrink;
     TextView tvTypeName;
@@ -30,16 +42,38 @@ public class MenuActivity extends AppCompatActivity{
         tvUniversityName = findViewById(R.id.tvUniversityName);
         tvTypeName = findViewById(R.id.tvTypeName);
 
-        btnEconom = findViewById(R.id.btnEconom);
-        btnFirstDish = findViewById(R.id.btnFirstDish);
-        btnSecondDish = findViewById(R.id.btnSecondDish);
-        btnGarnish = findViewById(R.id.btnGarnish);
-        btnBreadAndSauce = findViewById(R.id.btnBreadAndSauce);
-        btnCold = findViewById(R.id.btnCold);
-        btnDrink = findViewById(R.id.btnDrink);
-
         initTextOnActivity();
         initButtonListener();
+
+        FoodGroup foodGroup = new FoodGroup();
+        FoodList foodList = foodGroup.getFoodList(
+                getBaseContext(),
+                UNIVERSITY,
+                TYPE_OF_FOOD
+        );
+        //createList(getBaseContext(), foodList);
+    }
+
+    private void createList(Context context, FoodList foodList) {
+        LinearLayout mainLayout = findViewById(R.id.mainLayout);
+        //List<JsonFoodBody> list = foodList.list;
+
+//        for (int i = 0; i < list.size(); i++) {
+//        }
+//        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//
+//        ImageView img = (ImageView) layoutInflater.inflate(R.layout.activity_menu, mainLayout, false);
+//        img.setImageResource(R.drawable.ic_launcher_background);
+
+//        ImageView imageView = new ImageView(MenuActivity.this);
+//        imageView.setImageResource(R.drawable.ic_launcher_background);
+//        LinearLayout.LayoutParams imageViewLayoutParams = new LinearLayout.LayoutParams(
+//                LinearLayout.LayoutParams.WRAP_CONTENT,
+//                LinearLayout.LayoutParams.WRAP_CONTENT
+//        );
+//        imageView.setLayoutParams(imageViewLayoutParams);
+//
+//        mainLayout.addView(imageView);
     }
 
     private void initTextOnActivity() {
@@ -57,10 +91,19 @@ public class MenuActivity extends AppCompatActivity{
             universityRus = UNIVERSITY;
         }
         tvUniversityName.setText(universityRus);
-        tvTypeName.setText((intent.getStringExtra("type")));
+        TYPE_OF_FOOD = intent.getStringExtra("type");
+        tvTypeName.setText(TYPE_OF_FOOD);
     }
 
     private void initButtonListener() {
+        btnEconom = findViewById(R.id.btnEconom);
+        btnFirstDish = findViewById(R.id.btnFirstDish);
+        btnSecondDish = findViewById(R.id.btnSecondDish);
+        btnGarnish = findViewById(R.id.btnGarnish);
+        btnBreadAndSauce = findViewById(R.id.btnBreadAndSauce);
+        btnCold = findViewById(R.id.btnCold);
+        btnDrink = findViewById(R.id.btnDrink);
+
         MenuActivityListener listener = new MenuActivityListener(this, UNIVERSITY);
         btnEconom.setOnClickListener(listener);
         btnFirstDish.setOnClickListener(listener);

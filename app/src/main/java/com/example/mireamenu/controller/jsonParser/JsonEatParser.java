@@ -1,4 +1,4 @@
-package com.example.mireamenu.controller;
+package com.example.mireamenu.controller.jsonParser;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -15,7 +15,7 @@ import static com.example.mireamenu.Variables.PARSER_LOGGER;
 
 public class JsonEatParser {
 
-    public FoodList doParse(Context context, String universityName, String foodName) {
+    FoodList doParse(Context context, String universityName, String foodName) {
         Gson gson = new Gson();
         String filePath = "menus/" + universityName + "/" + foodName + ".json";
         Log.d(PARSER_LOGGER, "doParse()" + filePath);

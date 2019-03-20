@@ -6,7 +6,7 @@ public class Variables {
 
     public static final String MIREA = "mirea";
     public static final String MITHT = "mitht";
-    public static final String MGUPI = "mgypi";
+    public static final String MGUPI = "mgupi";
     public static final String COLD_SNAKE_PATH = "coldSnake";
     public static final String DRINK_PATH = "drink";
     public static final String ECONOM_PATH = "econom";
