@@ -3,6 +3,7 @@ package com.example.mireamenu.view.activities;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
@@ -59,7 +60,7 @@ public class MenuActivity extends AppCompatActivity{
     }
 
     /**
-     *  ScrollView лишний, нужно убрать
+     *  ScrollView лишний, нужно убрать, как и Context
      */
     private void createList(Context context, FoodList foodList) {
         LinearLayout lMain = findViewById(R.id.linearInto);
@@ -81,11 +82,18 @@ public class MenuActivity extends AppCompatActivity{
             JsonFoodBody product = foods.get(i);
             TextView name = new TextView(this);
             name.setText((i + 1) + ".) " + product.name + " " + product.weight);
-            name.setTextSize(24);
+            name.setTextSize(20);
+            name.setTextColor(Color.BLACK);
             name.setTypeface(Typeface.DEFAULT_BOLD);
             linearLayout.addView(name);
 
-            FoodActionListener listener = new FoodActionListener();
+            TextView description = new TextView(this);
+            description.setText("\t\t" + product.cost + "\u20BD");
+            description.setTextSize(16);
+            description.setTypeface(Typeface.DEFAULT_BOLD);
+            linearLayout.addView(description);
+
+            FoodActionListener listener = new FoodActionListener(this, product);
             name.setOnClickListener(listener);
         }
         scrollView.addView(linearLayout);
