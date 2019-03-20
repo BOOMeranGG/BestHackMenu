@@ -6,36 +6,43 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.mireamenu.R;
+import com.example.mireamenu.controller.actionListeners.MenuActivityListener;
 
 import static com.example.mireamenu.Variables.*;
 
-public class MainMenuActivity extends AppCompatActivity implements View.OnClickListener{
+public class MenuActivity extends AppCompatActivity{
 
     private String UNIVERSITY;
     TextView tvUniversityName;
-    Button btnEconom;
+    Button btnEconom, btnFirstDish, btnSecondDish, btnGarnish, btnBreadAndSauce, btnCold, btnDrink;
     TextView tvTypeName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_menu);
 
         Log.d(ACTIVITY_LOGGER, "MainMenu activity was created");
         tvUniversityName = findViewById(R.id.tvUniversityName);
         tvTypeName = findViewById(R.id.tvTypeName);
 
         btnEconom = findViewById(R.id.btnEconom);
-        btnEconom.setOnClickListener(this);
-        initActivity();
+        btnFirstDish = findViewById(R.id.btnFirstDish);
+        btnSecondDish = findViewById(R.id.btnSecondDish);
+        btnGarnish = findViewById(R.id.btnGarnish);
+        btnBreadAndSauce = findViewById(R.id.btnBreadAndSauce);
+        btnCold = findViewById(R.id.btnCold);
+        btnDrink = findViewById(R.id.btnDrink);
+
+        initTextOnActivity();
+        initButtonListener();
     }
 
-    private void initActivity() {
+    private void initTextOnActivity() {
         Intent intent = getIntent();
         UNIVERSITY = intent.getStringExtra("university");
         String universityRus;
@@ -50,7 +57,18 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
             universityRus = UNIVERSITY;
         }
         tvUniversityName.setText(universityRus);
-        tvTypeName.setText(intent.getStringExtra("type"));
+        tvTypeName.setText((intent.getStringExtra("type")));
+    }
+
+    private void initButtonListener() {
+        MenuActivityListener listener = new MenuActivityListener(this, UNIVERSITY);
+        btnEconom.setOnClickListener(listener);
+        btnFirstDish.setOnClickListener(listener);
+        btnSecondDish.setOnClickListener(listener);
+        btnGarnish.setOnClickListener(listener);
+        btnBreadAndSauce.setOnClickListener(listener);
+        btnCold.setOnClickListener(listener);
+        btnDrink.setOnClickListener(listener);
     }
 
     @Override
@@ -72,14 +90,5 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(MainMenuActivity.this, MainMenuActivity.class);
-        intent.putExtra("university", "GODDAMN RIGHT");
-        intent.putExtra("type", "Эконом обеды");
-        finish();
-        startActivity(intent);
     }
 }

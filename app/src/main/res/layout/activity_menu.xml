@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".view.activities.MainMenuActivity">
+    tools:context=".view.activities.MenuActivity">
 
     <TextView
         android:id="@+id/tvUniversityName"
@@ -87,7 +87,7 @@
                 android:text="@string/econom" />
 
             <Button
-                android:id="@+id/btnFirstCourse"
+                android:id="@+id/btnFirstDish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -97,7 +97,7 @@
                 android:text="@string/firstCourse" />
 
             <Button
-                android:id="@+id/btnSecondCourse"
+                android:id="@+id/btnSecondDish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

@@ -6,8 +6,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.mireamenu.R;
-import com.example.mireamenu.view.activities.MainActivity;
-import com.example.mireamenu.view.activities.MainMenuActivity;
+import com.example.mireamenu.view.activities.MenuActivity;
 
 import static com.example.mireamenu.Variables.ACTIVITY_LOGGER;
 import static com.example.mireamenu.Variables.ECONOM;
@@ -24,7 +23,7 @@ public class MainActivityListener implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(activity, MainMenuActivity.class);
+        Intent intent = new Intent(activity, MenuActivity.class);
         String university = "";
         switch (v.getId()) {
             case R.id.btnMIREA:
@@ -42,7 +41,6 @@ public class MainActivityListener implements View.OnClickListener {
         }
         intent.putExtra("university", university);
         intent.putExtra("type", ECONOM);
-        MainActivity act = new MainActivity();
         activity.startActivity(intent);
     }
 }
