@@ -15,29 +15,32 @@
 
     <Button
         android:id="@+id/btnMITHT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/mitht"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="8dp"
-        android:text="MITHT" />
+        android:text="" />
 
     <Button
         android:id="@+id/btnMIREA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/mirea"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_alignTop="@+id/btnMITHT"
         android:layout_centerHorizontal="true"
-        android:text="MIREA" />
+        android:text="" />
 
     <Button
         android:id="@+id/btnMGUPI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/mgupi"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_alignTop="@+id/btnMITHT"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="8dp"
-        android:text="MGUPI" />
+        android:text="" />
 
 
 </RelativeLayout>

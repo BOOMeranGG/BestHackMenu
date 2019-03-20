@@ -145,10 +145,8 @@ public class MenuActivity extends AppCompatActivity{
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        MenuItem menuItem = menu.findItem(R.id.action_location);
+        MenuItem menuItem = menu.findItem(R.id.basket_icon);
         menuItem.setVisible(true);
-        MenuItem menuItem2 = menu.findItem(R.id.basket_icon);
-        menuItem2.setVisible(true);
 
         return super.onPrepareOptionsMenu(menu);
     }
