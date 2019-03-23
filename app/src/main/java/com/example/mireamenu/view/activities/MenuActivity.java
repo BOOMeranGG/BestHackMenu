@@ -4,11 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -27,7 +29,7 @@ import java.util.List;
 
 import static com.example.mireamenu.Variables.*;
 
-public class MenuActivity extends AppCompatActivity{
+public class MenuActivity extends AppCompatActivity {
 
     private String UNIVERSITY;
     private String TYPE_OF_FOOD;
@@ -68,18 +70,17 @@ public class MenuActivity extends AppCompatActivity{
         LinearLayout lMain = findViewById(R.id.linearInto);
         List<ProductEntity> foods = foodList.list;
 
-        ScrollView scrollView = new ScrollView(this);
-        scrollView.setLayoutParams(new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT)
-        );
         LinearLayout linearLayout = new LinearLayout(this);
-        linearLayout.setLayoutParams(new LinearLayout.LayoutParams(
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT)
-        );
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+        float dp = getResources().getDisplayMetrics().density;
+        int marginSize = 8 * (int) dp;
+        layoutParams.setMargins(marginSize, marginSize, marginSize, marginSize);
 
+        linearLayout.setLayoutParams(layoutParams);
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        // Отрефакторить, вынеся реализацию вне этого метода
         for (int i = 0; i < foods.size(); i++) {
             ProductEntity product = foods.get(i);
             TextView name = new TextView(this);
@@ -93,13 +94,21 @@ public class MenuActivity extends AppCompatActivity{
             description.setText("\t\t" + product.cost + "\u20BD");
             description.setTextSize(16);
             description.setTypeface(Typeface.DEFAULT_BOLD);
+            description.setPadding(0, 0, 0, marginSize);
             linearLayout.addView(description);
 
             FoodActionListener listener = new FoodActionListener(this, product);
             name.setOnClickListener(listener);
+
+            if (i != foods.size() - 1) {
+                View line = new View(this);
+                int colorLine = ContextCompat.getColor(this, R.color.colorLine);
+                line.setBackgroundColor(colorLine);
+                line.setMinimumHeight((int) dp);
+                linearLayout.addView(line);
+            }
         }
-        scrollView.addView(linearLayout);
-        lMain.addView(scrollView);
+        lMain.addView(linearLayout);
     }
 
     /**
@@ -114,7 +123,7 @@ public class MenuActivity extends AppCompatActivity{
             universityRus = "Столовая МИРЭА";
         } else if (UNIVERSITY.equals(MITHT)) {
             universityRus = "Столовая МИТХТ";
-        } else if (UNIVERSITY.equals(MGUPI)){
+        } else if (UNIVERSITY.equals(MGUPI)) {
             universityRus = "Столовая МГУПИ";
         } else {
             universityRus = UNIVERSITY;
